@@ -1,4 +1,6 @@
-from turtle import Turtle
+from telnetlib import FORWARD_X
+from turtle import Turtle, up
+FORWARD = 20
 
 
 class Paddle(Turtle):
@@ -10,3 +12,6 @@ class Paddle(Turtle):
         self.penup()
         self.goto(350, 0)
 
+    def Up(self):
+        new_y = self.ycor() + FORWARD
+        self.goto(self.xcor(), new_y)

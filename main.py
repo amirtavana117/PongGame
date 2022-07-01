@@ -8,6 +8,9 @@ screen.bgcolor("black")
 screen.title("Pong")
 
 paddle = Paddle()
+screen.listen()
+
+screen.onkey(paddle.Up, "Up")
 
 
 screen.exitonclick()
