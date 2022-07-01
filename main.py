@@ -11,6 +11,6 @@ paddle = Paddle()
 screen.listen()
 
 screen.onkey(paddle.Up, "Up")
-
+screen.onkey(paddle.Down, "Down")
 
 screen.exitonclick()
