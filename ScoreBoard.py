@@ -9,6 +9,7 @@ class Scoreboard(Turtle):
         self.penup()
         self.l_score = 0
         self.r_score = 0
+        self.update_score_board()
 
     def update_score_board(self):
         self.clear()

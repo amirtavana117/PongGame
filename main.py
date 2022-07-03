@@ -27,7 +27,7 @@ Game_Is_on = True
 while Game_Is_on:
     screen.update()
     score.update_score_board()
-    time.sleep(0.1)
+    time.sleep(0.01)
     ball.move()
     if ball.ycor() > 280 or ball.ycor() < -280:
         ball.bouonce()
