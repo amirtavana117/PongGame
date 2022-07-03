@@ -1,4 +1,5 @@
 from turtle import Screen
+from Ball import Ball
 from Paddle import Paddle
 import time
 # Initial SCcreen
@@ -11,7 +12,7 @@ screen.title("Pong")
 screen.listen()
 r_paddle = Paddle((350, 0))
 l_paddle = Paddle((-350, 0))
-
+ball = Ball()
 
 screen.onkey(r_paddle.Up, "Up")
 screen.onkey(r_paddle.Down, "Down")
@@ -25,6 +26,7 @@ Game_Is_on = True
 while Game_Is_on:
     screen.update()
     time.sleep(0.1)
+    ball.move()
 
 
 screen.exitonclick()
